@@ -1,0 +1,26 @@
+{
+  "name": "meo-run-run",
+  "version": "0.0.0",
+  "description": "mr-meo-boulder-dash",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.1",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.10",
+    "@react-three/rapier": "^1.1.2",
+    "ecctrl": "^1.0.50",
+    "leva": "^0.9.35",
+    "r3f-perf": "^7.1.2",
+    "react": "18.2",
+    "react-dom": "18.2",
+    "three": "^0.158.0",
+    "zustand": "^4.4.7"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>______🐈</title>
+    <script>
+        // Function to update the title based on elapsed time
+        function updateTitle() {
+            const baseTitle = "______🐈";
+            const titleElement = document.querySelector('title');
+            const maxUnderscores = baseTitle.lastIndexOf('🐈');
+            let currentIndex = 0;
+
+            // Update the title every 1 second (1000 milliseconds)
+            setInterval(function() {
+                const underscoresBeforeCat = "_".repeat(maxUnderscores - currentIndex);
+                const underscoresAfterCat = "_".repeat(currentIndex);
+                titleElement.innerText = underscoresBeforeCat + "🐈" + underscoresAfterCat;
+                currentIndex = (currentIndex + 1) % (maxUnderscores + 1);
+            }, 250); // Change titles every 1 second
+        }
+        // Call the updateTitle function to start changing the title
+        updateTitle();
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="./index.jsx"></script></body>
+</html>
