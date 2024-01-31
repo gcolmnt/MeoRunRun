@@ -32,8 +32,8 @@ export function BlockStart({ position = [ 0, 0, 0 ] })
             <mesh 
                 geometry={ boxGeometry }
                 material={ floor1Material }
-                position={ [ 0, -0.1, -2 ] }
-                scale={ [ 4, 0.2, 8 ] }
+                position={ [ 0, -0.1, -4 ] }
+                scale={ [ 4, 0.2, 12 ] }
                 receiveShadow
             />
         </RigidBody>
@@ -124,18 +124,18 @@ function Bounds({ length = 1 })
         <RigidBody type="fixed" restitution={ 0.2 } friction={ 0 }>
 
             <mesh
-                position={ [ 2.15, 0.75, (length * 2) -1 ]}
+                position={ [ 2.15, 0.75, (length * 2) -3 ]}
                 geometry={ boxGeometry }
                 material={ wallMaterial }
-                scale={ [ 0.3, 1.5, 4 * length + 10 ] }
+                scale={ [ 0.3, 1.5, 4 * length + 14 ] }
                 castShadow
             />
 
             <mesh
-                position={ [ - 2.15, 0.75, (length * 2) - 1 ]}
+                position={ [ - 2.15, 0.75, (length * 2) - 3 ]}
                 geometry={ boxGeometry }
                 material={ wallMaterial }
-                scale={ [ 0.3, 1.5, 4 * length + 10 ] }
+                scale={ [ 0.3, 1.5, 4 * length + 14 ] }
                 receiveShadow
             />
         </RigidBody>
