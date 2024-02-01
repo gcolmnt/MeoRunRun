@@ -10,6 +10,13 @@ body,
     background: ivory;
 }
 
+@font-face {
+    font-family: "Ambery Garden";
+    src: url("./AmberyGardenRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /**
  * Interface
  */
@@ -50,6 +57,22 @@ body,
     justify-content: center;
     position: absolute;
     top: 40%;
+    left: 0%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 80px;
+    background: #00000033;
+    padding-top: 10px;
+    pointer-events: auto;
+    cursor: pointer;
+ }
+
+ .home
+ {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
     left: 0%;
     width: 100%;
     color: #ffffff;

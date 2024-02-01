@@ -41,7 +41,12 @@ export default function Interface()
         <div ref={ time } className="time">0.00</div>
 
         {/* Restart */}
-        { phase === 'ended' ? <div className="restart" onClick={ restart } >Restart</div> : null }
+        { phase === 'ended' ? 
+            <>
+                <div className="restart" onClick={ restart } >Restart</div>
+                <div className="home" onClick={ () => window.location.href = './index.html' }>Home</div>
+            </>
+             : null }
         {/* { phase === 'ended' && <div className="restart" onClick={ restart } >Restart</div> } */}
 
     </div>
